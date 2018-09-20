@@ -31,7 +31,7 @@ ext {
     springCloudServicesVersion = '2.0.1.RELEASE'
     springDbUnitVersion = '1.2.0'
     dbUnitVersion = '2.5.0'
-    springDataRestVersion = '3.0.10.RELEASE'
+//    springDataRestVersion = '3.0.10.RELEASE'
 }
 
 dependencies {
@@ -40,11 +40,10 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-hateoas')
     compile('org.springframework.boot:spring-boot-starter-jdbc')
     compile('org.springframework.boot:spring-boot-starter-web')
-    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
+//    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
     compile('org.springframework.cloud:spring-cloud-starter-openfeign')
     compile('io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry')
-    compile("org.springframework.data:spring-data-rest-webmvc:${springDataRestVersion}")
-    compile('org.javatuples:javatuples:1.2')
+//    compile("org.springframework.data:spring-data-rest-webmvc:${springDataRestVersion}")
     runtime('org.springframework.boot:spring-boot-devtools')
     runtime('mysql:mysql-connector-java')
     testCompile('org.springframework.boot:spring-boot-starter-test')
