@@ -1,7 +1,7 @@
 package com.solstice.client;
 
 import com.solstice.model.info.OrderInfo;
-import com.solstice.model.info.OrderLineItemInfo;
+import com.solstice.model.info.LineItemInfo;
 import java.util.List;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.hateoas.Resource;
@@ -23,13 +23,13 @@ public interface OrderClient {
   Resource<OrderInfo> getOrderDetails(@PathVariable(value="id") long orderId);
 
   @GetMapping("/orders/lines/shipments/{shipmentId}")
-  List<OrderLineItemInfo> getLineItemsByShipment(@PathVariable(value="shipmentId") long shipmentId, @RequestParam(value="accountId", required = false, defaultValue = "-1") long accountId);
+  List<LineItemInfo> getLineItemsByShipment(@PathVariable(value="shipmentId") long shipmentId, @RequestParam(value="accountId", required = false, defaultValue = "-1") long accountId);
 
   @GetMapping("/orders/{orderId}/lines/{lineId}")
-  Resource<OrderLineItemInfo> readLineItem(@PathVariable(value="orderId") long orderId, @PathVariable(name="lineId") long lineId);
+  Resource<LineItemInfo> readLineItem(@PathVariable(value="orderId") long orderId, @PathVariable(name="lineId") long lineId);
 
   @PutMapping("/orders/{orderId}/lines/{lineId}")
-  Resource<OrderLineItemInfo> updateLineItem(
+  Resource<LineItemInfo> updateLineItem(
       @PathVariable(name="orderId") long orderId,
       @PathVariable(name="lineId") long lineId,
       @RequestBody OrderLineItemRequestBody lineItem

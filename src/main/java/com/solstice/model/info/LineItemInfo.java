@@ -1,6 +1,7 @@
 package com.solstice.model.info;
 
-public class OrderLineItemInfo {
+public class LineItemInfo {
+
   private long lineItemId;
   private long lineItemProductId;
   private int quantity;
@@ -8,11 +9,10 @@ public class OrderLineItemInfo {
   private long lineItemOrderId;
   private long lineItemShipmentId;
 
-  public OrderLineItemInfo() {
-
+  public LineItemInfo() {
   }
 
-  public OrderLineItemInfo(long lineItemId, long lineItemProductId, int quantity,
+  public LineItemInfo(long lineItemId, long lineItemProductId, int quantity,
       double lineItemPrice, long lineItemOrderId, long lineItemShipmentId) {
     this.lineItemId = lineItemId;
     this.lineItemProductId = lineItemProductId;
@@ -70,4 +70,3 @@ public class OrderLineItemInfo {
     this.lineItemShipmentId = lineItemShipmentId;
   }
 }
-

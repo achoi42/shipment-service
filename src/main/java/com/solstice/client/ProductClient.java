@@ -13,6 +13,4 @@ public interface ProductClient {
 
   @GetMapping("/products/{productId}")
   Resource<ProductInfo> getProduct(@PathVariable(value="productId") long productId);
-
-
 }

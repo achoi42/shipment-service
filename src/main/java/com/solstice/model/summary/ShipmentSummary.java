@@ -10,11 +10,11 @@ public class ShipmentSummary {
   private int orderNum;
   private LocalDate shipmentDate;
   private LocalDate deliveryDate;
+
   @Embedded
   private List<OrderLineItemSummary> lineItems;
 
   public ShipmentSummary() {
-
   }
 
   @Autowired

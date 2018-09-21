@@ -37,16 +37,19 @@ ext {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('org.springframework.boot:spring-boot-starter-data-rest')
-    compile('org.springframework.boot:spring-boot-starter-hateoas')
+//    compile('org.springframework.boot:spring-boot-starter-hateoas')
     compile('org.springframework.boot:spring-boot-starter-jdbc')
     compile('org.springframework.boot:spring-boot-starter-web')
 //    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
     compile('org.springframework.cloud:spring-cloud-starter-openfeign')
     compile('io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry')
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
 //    compile("org.springframework.data:spring-data-rest-webmvc:${springDataRestVersion}")
     runtime('org.springframework.boot:spring-boot-devtools')
     runtime('mysql:mysql-connector-java')
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    //    testCompile('org.springframework.cloud:spring-cloud-starter-eureka-server')
+
 }
 
 dependencyManagement {

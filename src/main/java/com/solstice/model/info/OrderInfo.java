@@ -5,13 +5,13 @@ import java.util.List;
 public class OrderInfo {
 
   private int orderNum;
-  private List<OrderLineItemInfo> lineItems;
+  private List<OrderInfoLineItem> lineItems;
 
   public OrderInfo() {
 
   }
 
-  public OrderInfo(int orderNum, List<OrderLineItemInfo> lineItems) {
+  public OrderInfo(int orderNum, List<OrderInfoLineItem> lineItems) {
     this.orderNum = orderNum;
     this.lineItems = lineItems;
   }
@@ -24,11 +24,11 @@ public class OrderInfo {
     this.orderNum = orderNum;
   }
 
-  public List<OrderLineItemInfo> getLineItems() {
+  public List<OrderInfoLineItem> getLineItems() {
     return lineItems;
   }
 
-  public void setLineItems(List<OrderLineItemInfo> lineItems) {
+  public void setLineItems(List<OrderInfoLineItem> lineItems) {
     this.lineItems = lineItems;
   }
 }

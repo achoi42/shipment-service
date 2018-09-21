@@ -12,7 +12,6 @@ public class AddressInfo {
   private long accountId;
 
   public AddressInfo() {
-
   }
 
   public AddressInfo(long addressId, String streetName, int buildingNum, String city,

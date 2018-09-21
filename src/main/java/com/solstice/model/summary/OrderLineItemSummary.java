@@ -8,14 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 @Embeddable
 @Access(AccessType.PROPERTY)
 public class OrderLineItemSummary {
-//  private int orderNum;
+
   private String productName;
   private int quantity;
 
   public OrderLineItemSummary() {
-
   }
-
 
   @Autowired
   public OrderLineItemSummary(String productName, int quantity) {

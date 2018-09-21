@@ -6,13 +6,12 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
-import org.springframework.hateoas.config.EnableHypermediaSupport;
 
-@EnableHypermediaSupport(type = EnableHypermediaSupport.HypermediaType.HAL)
+//@EnableHypermediaSupport(type = EnableHypermediaSupport.HypermediaType.HAL)
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
 @EnableDiscoveryClient
 @EnableFeignClients
-//@EnableCircuitBreaker
+@EnableCircuitBreaker
 public class ShipmentServiceApplication {
 
   public static void main(String[] args) {

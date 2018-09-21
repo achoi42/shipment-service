@@ -8,7 +8,6 @@ public class ProductInfo {
   private double productPrice;
 
   public ProductInfo() {
-
   }
 
   public ProductInfo(String productName, String productDescription, String image,

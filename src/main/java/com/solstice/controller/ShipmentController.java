@@ -21,7 +21,6 @@ public class ShipmentController {
   private ShipmentPresenter shipmentPresenter;
 
   protected ShipmentController() {
-
   }
 
   @Autowired
